@@ -1,0 +1,760 @@
+.category-tab-wrapper button {
+    background-color: transparent;
+    padding: 0 15px 5px 15px;
+}
+.category-tab-item .cat-icon {
+    width: auto;
+    height: 60px;
+    transition: filter 0.3s ease;
+}
+.slick-slide img {
+    width: 100%;
+}
+.category-tab-item.active .cat-icon {
+   filter: invert(73%) sepia(51%) saturate(1376%) hue-rotate(5deg) brightness(95%) contrast(88%) !important;
+	transition: none !important;
+}
+.category-tab-item:hover .cat-icon {
+  transform: scale(1.08);
+}
+.category-tab-item:hover .cat-name, .swipe-hint{
+	color: #041467CC;
+}
+.category-tab-item.active .cat-name, .category-tab-item.active:hover .cat-name {
+    color: #d4a017;
+}
+.category-scroll-container,.swipe-hint, .package-header-info {
+    text-align: center;
+}
+.swipe-hint {
+    font-weight: 700;
+	margin: 0 0 35px 0;
+	color: #041467;
+}
+.swipe-hint span {
+    font-size: 40px;
+}
+.cat-name {
+    color: #041467;
+    font-size: 14px;
+}
+.category-panel-item .package-title {
+    font-size: 45px;
+    font-weight: 400;
+    color: #041467;
+    text-align: center;
+	margin-bottom: 5px;
+}
+.category-panel-item .package-subtitle {
+    color: #d4a017;
+    font-weight: 500;
+    font-size: 38px;
+    font-style: italic;
+    font-family: "Dancing Script", cursive;
+    position: relative;
+    display: inline-block;
+}
+.category-panel-item .package-subtitle::before {
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 1px;
+    background-color: #D4A017;
+    bottom: -14px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.category-panel-item .package-subtitle::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid #D4A017;
+    transform: translate(-50%, 0) rotate(45deg);
+    bottom: -18px;
+    left: 50%;
+}
+.package-short-desc {
+    font-size: 17px;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.package-pricing-badge .price-label {
+    display: block;
+    font-weight: 600;
+    color: #031467;
+	margin-bottom: 15px;
+}
+.package-pricing-badge .price-amount {
+    color: #d4a017;
+    font-size: 53px;
+    font-weight: 600;
+}
+.package-pricing-badge .price-sub {
+    font-weight: 600;
+    color: #031467;
+    font-size: 19px;
+    padding-left: 7px;
+}
+.guest-icon {
+    fill: #D4A017;
+    width: 25px;
+    height: 25px;
+}
+.package-min-booking span {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    font-weight: 600;
+    color: #031467;
+    text-transform: uppercase;
+    background-color: #faf4eb;
+    padding: 4px 20px;
+    border-radius: 50px;
+}
+.package-min-booking {
+    margin: 15px 0;
+}
+.enquire-now-btn span {
+    color: #D4A017;
+    font-size: 21px;
+    padding-left: 15px;
+}
+
+/* Hide all content panels by default */
+.category-panel-item {
+    display: none;
+}
+
+/* Show only the active content panel */
+.category-panel-item.active {
+    display: block;
+}
+/* Slick Slider Outer Container */
+.package-gallery-slider {
+  position: relative !important;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.package-gallery-slider .slick-prev,
+.package-gallery-slider .slick-next {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 99 !important; /* Forces arrows above the images */
+  width: 40px !important;
+  height: 40px !important;
+  background: rgba(10, 26, 61, 0.75) !important; /* Dark blue background */
+  border-radius: 50% !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
+  font-size: 16px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+.package-gallery-slider .slick-prev:hover,
+.package-gallery-slider .slick-next:hover {
+  background: #D4A017 !important; /* Gold hover */
+}
+.package-gallery-slider .slick-prev {
+  left: 15px !important;
+}
+
+.package-gallery-slider .slick-next {
+  right: 15px !important;
+}
+/* Remove default slick pseudoelements that rely on font icons */
+.package-gallery-slider .slick-prev::before,
+.package-gallery-slider .slick-next::before {
+  display: none !important;
+}
+/* Dots Styling */
+.package-gallery-slider .slick-dots {
+  position: absolute !important;
+  bottom: 12px !important;
+  left: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  z-index: 99 !important;
+}
+.enquire-now-btn {
+    background-color: #041467;
+    border-radius: 7px;
+    font-size: 21px;
+    max-width: 400px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 15px;
+    font-weight: 500;
+	transition: all 0.3s ease;
+}
+.enquire-now-btn:hover {
+    background-color: #D4A017;
+}
+.enquire-now-btn:hover span {
+    color: #fff;
+}
+.package-details-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    border-top: 1px solid #e8e8e8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.package-details-grid .column-title {
+    font-weight: 600;
+    color: #031467;
+    font-size: 17px;
+    margin-top: 25px;
+	margin-bottom: 16px;
+	position: relative;
+}
+.package-details-grid .column-title::before {
+    position: absolute;
+    content: "";
+    bottom: -8px;
+    left: 0;
+    background-color: #D4A017;
+    width: 26px;
+    height: 2px;
+}
+.calendar-icon {
+    background-color: #031467;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+.calendar-icon svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+}
+.package-bottom-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 820px;
+    background-color: rgba(250, 244, 235, 0.53);
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px auto 0 auto;
+}
+.package-bottom-cta .cta-text {
+    font-size: 17px;
+	  display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.package-bottom-cta .cta-inner {
+    padding-left: 20px;
+}
+.package-bottom-cta .cta-text strong {
+    color: #041467;
+    font-size: 16px;
+}
+.package-bottom-cta .cta-text p {
+    max-width: 260px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.secondary-enquire-btn {
+    background-color: rgba(250, 244, 235, 0.53);
+    border: 2px solid #D4A017;
+    border-radius: 7px;
+    color: #031467;
+    font-size: 17px;
+    font-weight: 600;
+}
+.secondary-enquire-btn span {
+    color: #D4A017;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.package-addons-column {
+    padding-left: 50px;
+}
+.package-details-grid .package-addons-column {
+    border-left: 1px solid #e8e8e8;
+}
+.package-details-grid ul li {
+    position: relative;
+    padding-left: 25px;
+}
+.package-details-grid ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    color: #D4A017;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+}
+.package-details-grid > div {
+    width: 50%;
+}
+.package-gallery-slider .slick-dots li {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+.package-gallery-slider .slick-dots li button {
+    font-size: 0 !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.6) !important;
+    border: none !important;
+    padding: 0 !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+}
+
+.package-gallery-slider .slick-dots li.slick-active button {
+    background: #031467 !important; /* Active dot gold */
+    width: 24px !important;
+    border-radius: 10px !important;
+}
+
+/* Remove slick default font icon on dot buttons */
+.package-gallery-slider .slick-dots li button::before {
+    display: none !important;
+}
+
+/* Equal Height for Slide Container */
+.package-gallery-slider .slide-item {
+    height: 480px; /* Set your preferred height */
+    overflow: hidden;
+    outline: none;
+}
+
+/* Image Fit & Uniformity */
+.package-gallery-slider .slide-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center -55px !important;
+    display: block;
+}
+.slide-item.slick-slide {
+    padding: 0 5px;
+}
+
+
+.package-gallery-slider::-webkit-scrollbar {
+  display: none; /* Hide scrollbar Chrome/Safari */
+}
+
+/* Individual Gallery Image Items */
+.package-gallery-slider .gallery-slide,
+.package-gallery-slider img {
+  flex: 0 0 100% !important; /* Force each image to take full width */
+  max-width: 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.category-content-panels {
+    max-width: 1050px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bonus-title {
+    font-weight: 600;
+    color: #031467;
+    font-size: 20px;
+    margin-bottom: 16px;
+    position: relative;
+    text-align: center;
+}
+.bonus-icon-circle {
+    background-color: #031467;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+	position: relative;
+}
+.bonus-icon-circle .gift-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.bonus-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bonus-grid .bonus-item {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 25px;
+}
+.bonus-grid .bonus-content {
+    padding-left: 12px;
+}
+.bonus-grid .bonus-item h5 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: #031467;
+    margin-bottom: 2px;
+}
+.bonus-grid .bonus-item p {
+    margin-bottom: 0;
+    font-size: 14px;
+    max-width: 210px;
+    line-height: 18px;
+}
+.bonus-grid .bonus-tag {
+    color: #d4a017;
+    font-size: 32px;
+    font-weight: 600;
+}
+.bonus-offer-card {
+    max-width: 900px;
+    background-color: rgba(250, 244, 235, 0.53);
+    padding: 25px 0;
+    border-radius: 10px;
+    margin: 30px auto 0 auto;
+    border: 2px solid #D4A017;
+}
+.bonus-grid .bonus-item:last-child {
+    border-left: 1px solid #D4A017;
+}
+.bonus-grid .bonus-item {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+
+/* 1. Force the outer container to act as a strict horizontal block */
+.category-scroll-container {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important; /* Forces iOS momentum touch scroll */
+    touch-action: pan-x !important; /* Enables horizontal touch gestures */
+    scrollbar-width: none; /* Firefox */
+}
+
+.category-scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+/* 2. Force the inner wrapper to span full scroll width using standard Flexbox */
+.category-tab-wrapper {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    width: max-content !important; /* Ensures wrapper expands to fit all buttons */
+    gap: 12px;
+    padding: 10px 16px;
+}
+
+/* 3. Stop buttons from squishing and allow pointer pass-through on child elements */
+.category-tab-item {
+    flex: 0 0 auto !important; /* Prevents button shrinking */
+    touch-action: manipulation;
+    cursor: pointer;
+}
+
+/* Prevent inner image/text from capturing touch drag events instead of the wrapper */
+.category-tab-item * {
+    pointer-events: none;
+}
+.package-bottom-cta .secondary-enquire-btn {
+    color: #041467;
+}
+.package-bottom-cta .secondary-enquire-btn:hover {
+    background-color: #041467;
+    color: #fff;
+    border-color: #041467;
+}
+/* WP Form: Selected package */
+/* Hide the underlying text field container so only the HTML card shows */
+.wpforms-field.hidden-package-input {
+    display: none !important;
+}
+
+/* Card Styling for Section 3 */
+.selected-package-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #c59d5f;
+    border-radius: 4px;
+    padding: 18px 22px;
+    background: #fdfbf7;
+    margin-top: 10px;
+}
+.package-left { display: flex; align-items: flex-start; gap: 12px; padding-right: 10px !important; }
+.selected-package-box .check-icon {
+    color: #d4a017;
+    border: 2px solid #d4a017;
+    padding: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  	font-size: 18px;
+  	margin-top: 8px;
+}
+.package-details h4 { margin: 0; font-size: 18px; color: #0b1938; font-weight: 600; }
+.selected-package-box .package-sub {
+    color: #d4a017;
+    font-size: 21px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+}
+.selected-package-box .package-meta {
+    margin: 0;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
+    color: #272626;
+    font-weight: 400;
+}
+
+.badge-from { display: block; font-size: 9px; letter-spacing: 1px; opacity: 0.8; }
+.selected-package-box .badge-price {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    color: #d4a017;
+}
+.badge-unit { display: block; font-size: 9px; letter-spacing: 1px; opacity: 0.8; }
+.selected-package-box .package-right-badge {
+    background-color: #031467;
+    padding: 5px;
+    border-radius: 7px;
+    text-align: center;
+    min-width: 115px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+}
+#wpforms-8231-field_19-container {
+    background-color: rgba(250, 244, 235, 0.37);
+    border-radius: 10px;
+    border: 2px solid #D4A017;
+    padding: 10px 15px;
+}
+#displayPackageTitle {
+    margin: 0;
+    color: #031467;
+    font-weight: 600;
+    font-size: 18px;
+	  line-height: 21px;
+}
+.other-service-op input[type="text"] {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    max-width: 370px !important;
+}
+.other-service-op {
+    padding-top: 0 !important;
+}
+.package-form-style h3.wpforms-field-label {
+    font-weight: 500 !important;
+    text-transform: uppercase;
+    font-size: 20px !important;
+}
+.package-form-style .wpforms-field-layout-rows .wpforms-field-label {
+    font-weight: 600;
+    font-size: 15px;
+}
+.package-form-style fieldset legend {
+    color: #d4a018 !important;
+    margin-bottom: 15px !important;
+}
+.package-form-style .wpforms-submit {
+    width: 100%;
+    height: 50px !important;
+	  position: relative;
+}
+.package-form-style .wpforms-submit::after {
+    position: absolute;
+    content: "\2192";
+    padding-left: 10px;
+    font-size: 26px;
+    top: 15px;
+}
+
+/* HIDING THE DATE PICKER AND ADD TO CARD FROM product pages */
+/* Hide the MWB date picker, quantities, and Add to Cart button on single product pages */
+.single-product form.cart .nbfw-date-picker-section__wrapper,
+.single-product form.cart .quantity,
+.single-product form.cart button.single_add_to_cart_button,
+.single-product form.cart .view-cart-button,
+.single-product .mwb-mbfw-total-area {
+    display: none !important;
+}
+
+/* Style the custom View Packages button */
+a.view-packages-btn {
+    display: inline-block;
+    background-color: #0b1938; /* Match your brand primary color */
+    color: #ffffff !important;
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+a.view-packages-btn:hover {
+    background-color: #c59d5f; /* Hover accent color */
+    color: #ffffff !important;
+}
+div.wpforms-container-full .wpforms-confirmation-container-full, div[submit-success] > .wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+    background: rgba(212, 160, 24, 0.11);
+  border: 1px solid #d4a018;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+}
+/* MOBILE RESPONSIVENESS START */
+@media screen and (max-width: 1200px){
+	.other-service-op input[type="text"] {
+    max-width: 32% !important;
+}
+}
+@media screen and (max-width: 915px){
+.bonus-icon-circle {
+    width: 65px;
+    height: 65px;
+}
+.bonus-icon-circle .gift-icon {
+    width: 35px;
+    height: 35px;
+}
+.bonus-grid .bonus-content {
+    max-width: 240px;
+}
+}
+@media screen and (max-width: 768px){
+  .package-gallery-slider .slide-item {
+    height: 280px;
+  }
+	.swipe-hint {
+    font-size: 15px;
+    line-height: 17px;
+}
+	.swipe-hint span {
+    font-size: 32px;
+}
+	.package-gallery-slider .slide-item img {
+    object-position: center !important;
+}
+	.package-gallery-slider .gallery-slide, .package-gallery-slider img{
+		border-radius: 30px;
+	}
+	.bonus-grid {
+    flex-direction: column;
+}
+.bonus-grid .bonus-item {
+    width: 100%;
+		flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.bonus-grid .bonus-content {
+    max-width: 100%;
+		margin-top: 15px;
+}
+.bonus-grid .bonus-item p {
+    margin: 0 auto;
+}
+.bonus-grid .bonus-item:last-child {
+    border-top: 1px solid #D4A017;
+    border-left: unset;
+		padding-top: 25px;
+}
+.bonus-grid .bonus-item:first-child {
+    padding-bottom: 25px;
+}
+.package-bottom-cta {
+  flex-direction: column;
+}
+.package-bottom-cta .cta-text p {
+  max-width: 100%;
+}
+.package-bottom-cta .cta-text {
+	display: block;
+  text-align: center;
+}
+.package-bottom-cta .cta-inner {
+   padding: 5px 0 20px;
+  text-align: center;
+}
+}
+@media screen and (max-width: 618px){
+.other-service-op input[type="text"] {
+    max-width: 100% !important;
+}
+}
+@media screen and (max-width: 480px){
+.package-details-grid > div {
+    width: 100%;
+}
+	.package-addons-column {
+    padding-left: 0;
+    border-left: unset !important;
+}
+	.category-panel-item .package-title {
+font-size: 43px;
+	}
+	.package-pricing-badge .price-amount {
+font-size: 45px;
+}
+	.selected-package-box {
+flex-direction: column;
+	}
+	.selected-package-box .package-right-badge {
+margin-top: 12px;
+		min-width: 140px;
+	}
+	.package-form-style h3.wpforms-field-label {
+    font-size: 16px !important;
+}
+}
