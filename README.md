@@ -53,6 +53,9 @@ A custom WordPress architecture designed to replace standard e-commerce booking 
 ### 6. Dynamic Package Enquiry Form
 ![Pre-Populated Package Enquiry Form](./docs/screenshots/Event-package-enquiry.png)
 
+### 7. Form Submission Email Notification
+![WPForms Submission Email Notification](./docs/screenshots/Form-submission-email.png)
+
 ---
 
 ## 📁 Repository Directory Structure
@@ -65,6 +68,7 @@ wp-event-package-enquiry-engine/
 │       ├── Custom-post-type.png
 │       ├── Event-package.png
 │       ├── Event-package-enquiry.png
+│       ├── Form-submission-email.png
 │       ├── Package-Edit-page.png
 │       └── WP-Form-setup.png
 ├── src/
