@@ -74,6 +74,7 @@ wp-event-package-enquiry-engine/
 │   └── package-engine.php
 └── README.md
 
+```
 ---
 
 ## 🔄 Navigation & User Workflow Architecture
@@ -97,3 +98,4 @@ wp-event-package-enquiry-engine/
                                                          * JS parses URL parameters
                                                          * Fills hidden input fields (#8231)
                                                          * Generates live UI preview card
+```
