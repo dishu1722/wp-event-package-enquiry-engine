@@ -1,4 +1,15 @@
 <?php
+/**
+ * Plugin Name: Custom Event Package & Enquiry Engine
+ * Description: Registers Event Package CPT, Taxonomies, shortcodes, and dynamic WPForms integration.
+ * Version:     1.0.0
+ * Author:      Diksha
+ */
+
+// Prevent direct file access
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
 function enqueue_package_slider_assets() {
     wp_enqueue_script('jquery');
     
